@@ -1,0 +1,86 @@
+/* HOME PAGE */
+
+body{
+    /* background-color: #1986692f !important;  */
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 500 !important;
+    font-style: normal !important;
+}
+
+.main-container{
+    margin: 0 20px;
+}
+
+/* navbar */
+
+
+nav button i{
+    color: #198669 !important;
+}
+
+form button{
+    background-color: #198669;
+    color: white;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+}
+
+footer{
+    position: relative !important;
+    bottom: -70px !important;
+    border-top: 2px solid #1370579a;
+}
+
+footer i{
+    color: #286a9f9f !important;
+}
+
+footer i:hover{
+    color: #28699F !important;
+    transform: scale(1.1);
+    transition: all ease .3s;
+}
+
+form button:hover{
+    background-color: #137057;
+}
+
+.header-input,form input{
+    background-color: #286a9f2d !important; 
+}
+
+.main-container input:focus{
+    box-shadow: none !important;
+    border-color: #198669 !important; 
+}
+
+a{
+    color: gray !important;
+    cursor: pointer !important;
+}
+
+a:hover{
+    color: #28699F !important;
+}
+
+nav{
+    border-bottom: 2px solid #198669 !important;
+}
+
+ul{
+    margin-right: 20px !important;
+}
+
+.dropdown-menu{
+    border: 2px solid #137057;
+}
+
+.dropdown-divider{
+    border: 1px solid #137057;
+}
+
+
+
+/* HEADER END */
