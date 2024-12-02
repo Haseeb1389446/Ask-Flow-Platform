@@ -67,7 +67,7 @@
   <!-- Grid container -->
 
   <!-- Copyright -->
-  <div class="foot-part2 text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+  <div class="foot-part2 text-center p-3">
     © 2024 Copyright:
     <a class="text-body" href="./">AskFlow.com</a>
   </div>

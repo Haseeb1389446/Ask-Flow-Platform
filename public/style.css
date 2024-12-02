@@ -11,11 +11,57 @@ body{
     margin: 0 20px;
 }
 
-/* navbar */
+/* Navbar */
 
+nav{
+    border-bottom: 2px solid #198669 !important;
+}
+
+nav a{
+    color: gray !important;
+    cursor: pointer !important;
+}
+
+nav a:hover{
+    color: #28699F !important;
+}
+
+
+nav ul{
+    margin-right: 20px !important;
+}
+
+.dropdown-menu{
+    border: 2px solid #137057;
+}
+
+.dropdown-divider{
+    border: 1px solid #137057;
+}
+
+.main-container input{
+    background-color: #286a9f2d !important; 
+}
+
+.main-container input:focus{
+    box-shadow: none !important;
+    border-color: #198669 !important; 
+}
 
 nav button i{
     color: #198669 !important;
+}
+
+/* Navbar End */
+
+/* Forms */
+
+.login{
+    padding: 20vh 0;
+}
+
+.signup{
+    padding: 20vh 0;
 }
 
 form button{
@@ -27,10 +73,31 @@ form button{
     border: none;
 }
 
+form button:hover{
+    background-color: #137057;
+}
+
+/* Forms End */
+
+/* Footer */
+
 footer{
-    position: relative !important;
-    bottom: -70px !important;
     border-top: 2px solid #1370579a;
+}
+
+.foot-part2{
+    background-color: #1986692f;
+}
+
+.foot-part2 a{
+    /* color: #286a9f9f !important; */
+    color: gray !important;
+}
+
+.foot-part2 a:hover{
+    /* color: #28699F !important; */
+    color: #28699F !important;
+    transition: all ease .3s;
 }
 
 footer i{
@@ -43,44 +110,6 @@ footer i:hover{
     transition: all ease .3s;
 }
 
-form button:hover{
-    background-color: #137057;
-}
-
-.header-input,form input{
-    background-color: #286a9f2d !important; 
-}
-
-.main-container input:focus{
-    box-shadow: none !important;
-    border-color: #198669 !important; 
-}
-
-a{
-    color: gray !important;
-    cursor: pointer !important;
-}
-
-a:hover{
-    color: #28699F !important;
-}
-
-nav{
-    border-bottom: 2px solid #198669 !important;
-}
-
-ul{
-    margin-right: 20px !important;
-}
-
-.dropdown-menu{
-    border: 2px solid #137057;
-}
-
-.dropdown-divider{
-    border: 1px solid #137057;
-}
-
-
+/* Footer End */
 
 /* HEADER END */

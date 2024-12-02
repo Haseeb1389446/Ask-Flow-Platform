@@ -1,4 +1,4 @@
-<form class="col-6 container mt-5 pt-5 form" method="post" enctype="multipart/form-data">
+<form class="signup col-6 container mt-5 pt-5" method="post" enctype="multipart/form-data" action="./server/requests.php">
   <h1 class="mb-3 mt-4">Sign Up</h1>
   <div class="mb-3 mt-4">
     <label for="name" class="form-label">Username</label>
@@ -17,5 +17,5 @@
     <input type="text" name="address" placeholder="Address" class="form-control" id="address">
   </div>
 
-  <button type="submit">Submit</button>
+  <button type="submit" name="submit">Submit</button>
 </form>
