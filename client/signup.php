@@ -17,5 +17,5 @@
     <input type="text" name="address" placeholder="Address" class="form-control" id="address">
   </div>
 
-  <button type="submit" name="submit">Submit</button>
+  <button type="submit" name="signup">Submit</button>
 </form>

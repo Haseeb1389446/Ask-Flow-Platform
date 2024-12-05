@@ -26,7 +26,6 @@ nav a:hover{
     color: #28699F !important;
 }
 
-
 nav ul{
     margin-right: 20px !important;
 }
@@ -39,14 +38,6 @@ nav ul{
     border: 1px solid #137057;
 }
 
-.main-container input{
-    background-color: #286a9f2d !important; 
-}
-
-.main-container input:focus{
-    box-shadow: none !important;
-    border-color: #198669 !important; 
-}
 
 nav button i{
     color: #198669 !important;
@@ -62,6 +53,22 @@ nav button i{
 
 .signup{
     padding: 20vh 0;
+}
+
+.main-container input,.main-container textarea,.main-container select{
+    background-color: #286a9f2d !important; 
+}
+
+select option:hover{
+    font-size: 16px;
+    color: white !important;
+    background-color: #137057 !important;
+    cursor: pointer !important;
+}
+
+.main-container input:focus{
+    box-shadow: none !important;
+    border-color: #198669 !important; 
 }
 
 form button{
