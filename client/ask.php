@@ -18,5 +18,5 @@
   </div>
 
 
-  <button type="submit" name="login">Submit</button>
+  <button type="submit" name="ask">Submit</button>
 </form>

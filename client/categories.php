@@ -11,7 +11,7 @@ $rezult = mysqli_query($con,$query);
 foreach($rezult as $row){
 
 $id = $row["id"];
-$name = $row["name"];
+$name = ucfirst($row["name"]);
 
 echo "<option value=$id>$name</option>";
 
