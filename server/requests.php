@@ -39,15 +39,15 @@ if(isset($_POST["signup"])){
     $query = "SELECT * FROM `users` WHERE email = '$email' AND pass = '$pass'";
     $rezult = mysqli_query($con,$query);
     $row = mysqli_num_rows($rezult);
-    
-    $user_id = mysqli_insert_id($con);
 
     if($row > 0){
 
+        $user_data = mysqli_fetch_assoc($rezult);
+
         $_SESSION["user"] = [
-            "user_id" => $user_id->insert_id,
-            "pass" => $pass,
-            "email" => $email
+            "user_id" => $user_data["id"],
+            "pass" => $user_data["pass"],
+            "email" => $user_data["email"]
         ];
 
         echo "<script>alert('User login successfully...');
@@ -73,8 +73,6 @@ if(isset($_POST["signup"])){
     $query = "INSERT INTO `questions`(`title`,`description`,`category_id`,`user_id`) VALUES ('$title','$description','$category_id','$user_id')";
     $rezult = mysqli_query($con,$query);
     
-    $user_id = mysqli_insert_id($con);
-
     if($rezult){
 
         echo "<script>alert('Question is added to website...');
@@ -86,6 +84,8 @@ if(isset($_POST["signup"])){
         </script>";
     }
 
+} else {
+    
 }
 
 ?>
