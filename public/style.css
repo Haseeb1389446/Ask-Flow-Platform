@@ -70,6 +70,20 @@ nav button i{
 
 /* Home End */
 
+/* Answers */
+
+.answers {
+    margin-bottom: 20vh;
+}
+
+.answers p {
+    margin-top: 20px;
+    border-bottom: 2px solid #137057;
+    margin-left: 20px;
+}
+
+/* Answers End */
+
 /* Forms */
 
 .login{
@@ -84,19 +98,12 @@ nav button i{
     background-color: #286a9f2d !important; 
 }
 
-select option:hover{
-    font-size: 16px;
-    color: white !important;
-    background-color: #137057 !important;
-    cursor: pointer !important;
-}
-
 .main-container input:focus,.main-container textarea:focus,.main-container select:focus{
     box-shadow: none !important;
     border-color: #198669 !important; 
 }
 
-form button{
+form button, .question-post button{
     background-color: #198669;
     color: white;
     outline: none;

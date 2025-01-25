@@ -59,7 +59,7 @@ if(isset($_POST["signup"])){
         </script>";
     }
 
-} else if ($_GET["logout"]) {
+} else if (isset($_GET["logout"])) {
 
     session_destroy();
     header('location:../index.php');
@@ -81,6 +81,24 @@ if(isset($_POST["signup"])){
     }else{
         echo "<script>alert('Question is not added to website...');
         window.location.href = '../index.php';
+        </script>";
+    }
+
+} else if (isset($_POST["answer"])) {
+
+    $answer = $_POST["answer"];
+    $question_id = $_POST["question-id"];
+    $user_id = $_SESSION["user"]["user_id"];
+
+    $query = "INSERT INTO `answers`(`answer`,`question_id`,`user_id`) VALUES ('$answer','$question_id','$user_id')";
+    $rezult = mysqli_query($con,$query);
+    
+    if($rezult){
+        
+        echo header("location: /Ask Flow?question-id=$question_id");
+    }else{
+        echo "<script>alert('Answer is not Submitted...');
+        window.location.href = '/Ask Flow?question-id=$question_id';
         </script>";
     }
 
