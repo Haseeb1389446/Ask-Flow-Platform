@@ -7,14 +7,20 @@
             <?php
 
             include "./server/config.php";
-            $query = "SELECT * FROM `questions`";
+
+            if(isset($_GET["category-id"])) {
+                $cid = (int) $_GET["category-id"];
+                $query = "SELECT * FROM `questions` WHERE category_id = $cid";
+            }else {
+                $query = "SELECT * FROM `questions`";
+            }
 
             $rezult = mysqli_query($con, $query);
 
             foreach ($rezult as $row) {
                 $title = $row["title"];
                 $qid = $row["id"];
-
+                
                 echo "<div><a href='?question-id=$qid'><h4>$title</h4></a></div>";
             }
 
@@ -29,11 +35,12 @@
 
             $query = "SELECT * FROM `categories`";
             $rezult = mysqli_query($con, $query);
-
+            
             foreach ($rezult as $row) {
                 $category = $row["name"];
+                $cid = $row["id"];
 
-                echo "<div><h4>$category</h4></div>";
+                echo "<div><a href='?category-id=$cid'><h4>$category</h4></a></div>";
             }
 
             ?>

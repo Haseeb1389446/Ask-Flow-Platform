@@ -50,19 +50,19 @@ nav button i{
     margin: auto;
 }
 
-.questions a {
+.questions a , .relquestion a{
     text-decoration: none;
     color: black;
 }
 
-.questions h4 {
+.questions h4, .relquestion h4 {
     margin: 30px 0;
     border: 2px solid #137057;
     padding: 15px;
     border-radius: 7px;
 }
 
-.questions h4:hover {
+.questions h4:hover, .relquestion a:hover {
     cursor: pointer;
     color: #286a9fad;
     transition: all ease .5s;
@@ -73,7 +73,7 @@ nav button i{
 /* Answers */
 
 .answers {
-    margin-bottom: 20vh;
+    margin-bottom: 27vh;
 }
 
 .answers p {

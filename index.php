@@ -23,6 +23,8 @@
                 include './client/ask.php';
             }else if (isset($_GET["question-id"])) {
                 include './client/question-detail.php';
+            }else if(isset($_GET["category-id"])) {
+                include './client/questions.php';
             }else{
                 include './client/questions.php';
             }
