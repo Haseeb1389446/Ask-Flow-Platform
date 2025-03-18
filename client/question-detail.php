@@ -10,7 +10,8 @@
      $query = "SELECT * FROM `questions` WHERE id = $qid";
      $rezult = mysqli_query($con,$query);
      $row = mysqli_fetch_assoc($rezult);
-
+     
+     $cid = $row["category_id"];
      
 
      echo "<h4>Question : ".$row["title"]."</h4>";

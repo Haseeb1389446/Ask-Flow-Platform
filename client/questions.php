@@ -9,10 +9,23 @@
             include "./server/config.php";
 
             if(isset($_GET["category-id"])) {
+
                 $cid = (int) $_GET["category-id"];
                 $query = "SELECT * FROM `questions` WHERE category_id = $cid";
-            }else {
+
+            } else if(isset($_GET["user-id"])) {
+
+                $uid = (int) $_GET["user-id"];
+                $query = "SELECT * FROM `questions` WHERE category_id = $uid";
+
+            } else if(isset($_GET["latest"])) {
+
+                $query = "SELECT * FROM `questions` ORDER BY id desc";
+
+            } else {
+
                 $query = "SELECT * FROM `questions`";
+
             }
 
             $rezult = mysqli_query($con, $query);
