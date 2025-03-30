@@ -102,6 +102,24 @@ if(isset($_POST["signup"])){
         </script>";
     }
 
+} else if (isset($_GET["q-delete"])) {
+
+    $qid = $_GET["q-delete"];
+    $user_id = $_SESSION["user"]["user_id"];
+
+    $query = "DELETE FROM `questions` WHERE id = $qid";
+    $rezult = mysqli_query($con,$query);
+
+    if ($rezult) {
+        echo "<script>alert('The Question is Deleted...');
+        window.location.href = '../index.php?user-id=$user_id';
+        </script>";
+    } else {
+        echo "<script>alert('Question is not Deleted...');
+        window.location.href = '../index.php?user-id=$user_id';
+        </script>";
+    }
+
 } else {
     
 }

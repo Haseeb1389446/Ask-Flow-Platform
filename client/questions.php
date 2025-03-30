@@ -1,11 +1,12 @@
 <div class="questions mb-5 mt-5">
     
     <div class="row">
-        <div class="col-md-10">
+        <div class="col-md-9">
             <h1 class="mb-5">Questions</h1>
 
             <?php
 
+            $uid = null;
             include "./server/config.php";
 
             if(isset($_GET["category-id"])) {
@@ -22,6 +23,10 @@
 
                 $query = "SELECT * FROM `questions` ORDER BY id desc";
 
+            } else if(isset($_GET["search"])) {
+
+                $query = "SELECT * FROM `questions` WHERE `title` LIKE '%$search%'";
+
             } else {
 
                 $query = "SELECT * FROM `questions`";
@@ -34,14 +39,16 @@
                 $title = $row["title"];
                 $qid = $row["id"];
                 
-                echo "<div><a href='?question-id=$qid'><h4>$title</h4></a></div>";
+                echo "<div><h4><a href='?question-id=$qid'>$title</a>";
+                echo $uid?"<a href='./server/requests.php?q-delete=$qid' class='q-delete'>Delete</a>":NULL;
+                echo "</h4></div>";
             }
 
             ?>
 
         </div>
 
-        <div class="col-md-2">
+        <div class="col-md-2 category">
             <h2 class="mb-5">Category</h2>
 
             <?php
@@ -53,7 +60,7 @@
                 $category = $row["name"];
                 $cid = $row["id"];
 
-                echo "<div><a href='?category-id=$cid'><h4>$category</h4></a></div>";
+                echo "<a class='mb-2' href='?category-id=$cid'>$category</a>";
             }
 
             ?>

@@ -15,17 +15,20 @@
     
             include './client/header.php';
             
-            if(isset($_GET["signup"]) && (!isset($_SESSION["user"]) || !isset($_SESSION["user"]["email"]))){
+            if (isset($_GET["signup"]) && (!isset($_SESSION["user"]) || !isset($_SESSION["user"]["email"]))) {
                 include './client/signup.php';
-            }else if (isset($_GET["login"]) && (!isset($_SESSION["user"]) || !isset($_SESSION["user"]["email"]))) {
+            } else if (isset($_GET["login"]) && (!isset($_SESSION["user"]) || !isset($_SESSION["user"]["email"]))) {
                 include './client/login.php';
-            }else if (isset($_GET["ask"])) {
+            } else if (isset($_GET["ask"])) {
                 include './client/ask.php';
-            }else if (isset($_GET["question-id"])) {
+            } else if (isset($_GET["question-id"])) {
                 include './client/question-detail.php';
-            }else if(isset($_GET["category-id"])) {
+            } else if (isset($_GET["category-id"])) {
                 include './client/questions.php';
-            }else{
+            } else if (isset($_GET["search"])) {
+                $search = $_GET["search"];
+                include './client/questions.php';
+            } else {
                 include './client/questions.php';
             }
             
