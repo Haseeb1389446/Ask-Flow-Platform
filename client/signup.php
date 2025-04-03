@@ -17,5 +17,5 @@
     <input type="text" name="address" placeholder="Address" class="form-control" id="address">
   </div>
 
-  <button type="submit" name="signup">Submit</button>
+  <button type="submit" name="signup">Submit</button>&nbsp; &nbsp; &nbsp; <span>Have an Account<a class="btn btn-link" href="?login=true">Login.</a></span>
 </form>

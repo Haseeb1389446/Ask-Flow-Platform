@@ -131,6 +131,20 @@ nav button i{
     padding: 20vh 0;
 }
 
+.signup span a, .login span a{
+    color: gray;
+}
+
+.signup span a:hover, .login span a:hover{
+    color: #137057;
+}
+
+.signup span, .login span{
+    color: gray;
+    font-weight: 500;
+    font-size: 15px;
+}
+
 .main-container input,.main-container textarea,.main-container select{
     background-color: #286a9f2d !important; 
 }

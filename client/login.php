@@ -10,5 +10,5 @@
   </div>
 
 
-  <button type="submit" name="login">Submit</button>
+  <button type="submit" name="login">Submit</button>&nbsp; &nbsp; &nbsp; <span>Create an Account<a class="btn btn-link" href="?signup=true">Sign Up.</a></span>
 </form>

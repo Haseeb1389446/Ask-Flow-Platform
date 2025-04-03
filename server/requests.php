@@ -66,11 +66,11 @@ if(isset($_POST["signup"])){
 
 } else if (isset($_POST["ask"])) {
     $title = $_POST["title"];
-    $description = $_POST["description"];
+    $description = "→ " . $_POST["description"];
     $category_id = $_POST["category"];
     $user_id = $_SESSION["user"]["user_id"];
 
-    $query = "INSERT INTO `questions`(`title`,`description`,`category_id`,`user_id`) VALUES ('$title','$description','$category_id','$user_id')";
+    $query = "INSERT INTO `questions`(`title`, `description`, `category_id`, `user_id`) VALUES ('$title','$description','$category_id','$user_id')";
     $rezult = mysqli_query($con,$query);
     
     if($rezult){
