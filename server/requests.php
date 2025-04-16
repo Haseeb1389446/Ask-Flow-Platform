@@ -19,6 +19,7 @@ if(isset($_POST["signup"])){
 
         $_SESSION["user"] = [
             "user_id" => $user_id,
+            "name" => $name,
             "pass" => $pass,
             "email" => $email
         ];
@@ -46,6 +47,7 @@ if(isset($_POST["signup"])){
 
         $_SESSION["user"] = [
             "user_id" => $user_data["id"],
+            "name" => $user_data["name"],
             "pass" => $user_data["pass"],
             "email" => $user_data["email"]
         ];

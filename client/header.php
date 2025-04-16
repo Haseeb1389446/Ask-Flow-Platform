@@ -19,7 +19,7 @@
         ?>
 
           <li class="nav-item">
-            <a class="nav-link" href="./server/requests.php?logout=true">Logout</a>
+            <a class="nav-link" href="./server/requests.php?logout=true">Logout | <?php echo $_SESSION["user"]["name"]; ?></a>
           </li>
 
           <li class="nav-item">

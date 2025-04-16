@@ -80,6 +80,55 @@ nav button i{
     transition: all ease .5s;
 }
 
+.no-questions {
+    background-color: #f8f9fa; /* light gray background */
+    border: 1px solid #dee2e6; /* soft border */
+    padding: 40px 30px;
+    max-width: 700px;
+    margin: 100px auto;
+    text-align: center;
+    border-radius: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+.no-questions h2 {
+    color: #343a40;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.no-questions .no-icon {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.no-questions .no-text {
+    font-size: 16px;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+.no-questions .ask-btn {
+    color: #28699F;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.load-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #137057;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.load-more-button:hover {
+    background-color: #008f7a;
+}
+
 /* Questions End */
 
 /* Category */
