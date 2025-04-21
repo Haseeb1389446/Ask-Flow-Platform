@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 09, 2025 at 04:59 AM
+-- Generation Time: Apr 21, 2025 at 09:04 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -39,26 +39,21 @@ CREATE TABLE `answers` (
 --
 
 INSERT INTO `answers` (`id`, `answer`, `question_id`, `user_id`) VALUES
-(2, 'Takken 8', 2, 3),
-(3, 'Absolutely Ronaldo !!', 4, 2),
-(4, 'yes, You Should', 3, 2),
-(5, 'IPhone Battery timming is not good thats why you should not  buy IPhone ', 3, 2),
-(6, 'I Love Tokyo City from Japan', 7, 2),
-(7, 'I Want to Learn JAVA', 8, 2),
-(8, 'You should watch Darling in The FranXX', 10, 6),
-(9, 'Nooooooooooo 😁', 9, 6),
-(10, 'Tomb Rider', 2, 6),
-(12, 'Messi is The Best ✌', 4, 6),
-(13, 'I want to be Superman. 😪', 6, 6),
-(14, 'My Father told me. If you realy Want It, Sacrifice for It.', 5, 6),
-(15, 'Officly 11 😪', 1, 1),
-(16, 'I am Batman 🦇', 6, 1),
-(17, 'How Stupid Question 😠', 1, 4),
-(18, 'I am Currently Learning Driving', 8, 4),
-(19, 'Akudama Drive', 10, 4),
-(20, '1000000000000000000000000000000000000000000000000000000000000000000000', 1, 0),
-(21, 'The Last of Us', 2, 2),
-(22, '.', 10, 8);
+(1, 'Officiously Three 😪', 1, 13),
+(2, 'Use substitution by solving one equation for a variable and substituting it into the other equation.', 30, 13),
+(3, 'Create a strong portfolio showcasing your skills and previous work.', 14, 13),
+(4, 'Use room temperature ingredients (butter, eggs) for smoother batter and better texture.', 11, 13),
+(6, 'I love Tokyo from japan.', 7, 8),
+(7, 'Janat Ke PAtte', 6, 8),
+(8, 'I think Egypt.', 5, 8),
+(9, 'Officiously Cricket 🤘', 27, 8),
+(10, ' Use matrix methods like Gaussian elimination or matrix inverses for larger systems of equations.', 30, 8),
+(11, 'What a useless question 😡', 1, 17),
+(12, 'do not eat 😂', 4, 17),
+(13, 'You should learn a good skill, then you can do freelancing. 😕', 3, 17),
+(14, 'Mexico and Central America have stunning beaches and cultural experiences at budget-friendly prices. Thanks me later 😑👍', 7, 17),
+(15, 'Words of Radiance is a great Novel 😋', 6, 17),
+(16, 'The rise of Adolf Hitler and the expansionist policies of Nazi Germany. 🤷‍♀️', 21, 15);
 
 -- --------------------------------------------------------
 
@@ -216,7 +211,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `answers`
 --
 ALTER TABLE `answers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `categories`

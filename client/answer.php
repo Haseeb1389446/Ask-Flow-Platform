@@ -8,12 +8,24 @@
     $query = "SELECT * FROM `answers` WHERE question_id = $qid";
     $rezult = mysqli_query($con,$query);
 
-    foreach ($rezult as $row) {
-        $answer = $row["answer"];
-        echo "<p>$answer</p>";
+    if(mysqli_num_rows($rezult) === 0) {
+
+        echo "<div class='no-answers'>
+                    <h6>No Answers Yet</h6>
+                </div>";
+
+    } else {
+
+        foreach ($rezult as $row) {
+            $answer = $row["answer"];
+            echo "<p>$answer</p>";
+        }
+
     }
     
     ?>
+
+    <br><hr>
 
     <div class="mt-5 pt-5 relquestion">
 
