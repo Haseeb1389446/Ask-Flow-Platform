@@ -17,7 +17,7 @@
                 $baseQuery = "SELECT * FROM `questions` WHERE category_id = $cid";
             } else if (isset($_GET["user-id"])) {
                 $uid = (int) $_GET["user-id"];
-                $baseQuery = "SELECT * FROM `questions` WHERE category_id = $uid";
+                $baseQuery = "SELECT * FROM `questions` WHERE user_id = $uid";
             } else if (isset($_GET["latest"])) {
                 $baseQuery = "SELECT * FROM `questions` ORDER BY id DESC";
             } else if (isset($_GET["search"])) {
