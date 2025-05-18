@@ -1,35 +1,84 @@
-# RichField Chairs
+<h1 align="center" style="color:green;">🌿 Ask Flow Platform 🌿</h1>
 
-This is an accessibility-focused ♿ e-commerce website for chairs, designed with a brown and orange color palette (Hex codes) and enhanced with smooth transitions and animations, built using 🟠HTML, 🔵CSS, and 🟡JavaScript.
+<p align="center">💬 A community Q&A platform built with <b>Core PHP & MySQL</b>, just like Stack Overflow!</p>
+
+---
 
 ## Screenshots
 
 Here is the screenshots of the project:
 
-### Home page
 
-![image](https://github.com/user-attachments/assets/2b39e073-389f-4beb-a27f-26653304ad95)
+### Home Page
+![Home Page](https://github.com/Haseeb1389446/Ask-Flow-Platform/blob/main/AskFlow%20View/Askflow-home-view.png)
 
+### No Questions Page
+![Ask Question](https://github.com/Haseeb1389446/Ask-Flow-Platform/blob/main/AskFlow%20View/Askflow-noquestion-view.png)
 
-### About page
+### Login Page
+![Ask Question](https://github.com/Haseeb1389446/Ask-Flow-Platform/blob/main/AskFlow%20View/Askflow-login-view.png)
 
-![image](https://github.com/user-attachments/assets/6d47ce9b-d50c-4f9c-b1bd-ddf375de4f3a)
+### Signup Page
+![Ask Question](https://github.com/Haseeb1389446/Ask-Flow-Platform/blob/main/AskFlow%20View/Askflow-signup-view.png)
 
+### Ask a Question page
+![Ask Question](https://github.com/Haseeb1389446/Ask-Flow-Platform/blob/main/AskFlow%20View/Askflow-askaquestion-view.png)
 
-### Products page
+### Question Detail page
+![Ask Question](https://github.com/Haseeb1389446/Ask-Flow-Platform/blob/main/AskFlow%20View/Askflow-questiondetails-view.png)
 
-![image](https://github.com/user-attachments/assets/26bfda81-8220-446a-b109-fc5581146062)
+### No Answers Page
+![Questions List](https://github.com/Haseeb1389446/Ask-Flow-Platform/blob/main/AskFlow%20View/Askflow-noanswer-view.png)
 
+### Latest Question Page
+![Ask Question](https://github.com/Haseeb1389446/Ask-Flow-Platform/blob/main/AskFlow%20View/Askflow-latestquestion-view.png)
 
-### Comparison page
+---
 
-![image](https://github.com/user-attachments/assets/91a5f763-33d4-4f98-8336-a9391ed76a0a)
+## ✨ Features
 
+| Feature               | Description                                                                 |
+|--------------------------|--------------------------------------------------------------------------------|
+| **Ask & Answer**       | Users can post questions and answer others.                                   |
+| **Category System**    | Each question can be categorized for easy filtering and browsing.             |
+| **User Authentication**| Registration and login functionality with PHP sessions.                      |
+| **Search Functionality**| Quickly find questions using keywords.                                      |
+| **Responsive Design**  | Mobile-friendly layout with Bootstrap.                                        |
 
-### Contact page
+---
 
-![image](https://github.com/user-attachments/assets/3ee51057-f8ac-4ff0-a7d8-89102b278107)
+## 🛠️ Tech Stack
 
+| Layer     | Technologies                    |
+|--------------|------------------------------------|
+| Frontend     | HTML, CSS, Bootstrap   |
+| Backend      | Core PHP                           |
+| Database     | MySQL                              |
+| Tools        | Git, GitHub, XAMPP            |
 
+---
 
+## 🗂 Project Structure
 
+```bash
+Ask-Flow-Platform/
+├── Client/
+│   ├── header.php
+│   ├── footer.php
+│   ├── answer.php
+│   ├── ask.php
+│   ├── categories.php
+│   ├── commonFiles.php
+│   ├── Login.php
+│   ├── Signup.php
+│   ├── question-detail.php
+│   └── questions.php
+├── Public/
+│   ├── askflow-logo.png
+│   └── style.css
+├── Server/
+│   ├── requests.php
+│   └── config.php
+├── ask_flow.sql
+├── index.php
+└── README.md
