@@ -85,15 +85,12 @@ nav button i{
 }
 
 .no-questions {
-    background-color: #f8f9fa; /* light gray background */
-    border: 1px solid #dee2e6; /* soft border */
     padding: 40px 30px;
     max-width: 700px;
     margin: 100px auto;
     text-align: center;
     border-radius: 12px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
 }
 
 .no-questions h2 {
